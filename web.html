@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heavenly London</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <div class="content">
+        <h1>Heavenly London</h1>
+        <div class="search-container">
+            <input type="text" class="search-input" id="searchInput" placeholder="Поиск">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="11" cy="11" r="7" stroke="white" stroke-width="2" />
+                <path d="M16 16L21 21" stroke="white" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </div>
+
+        <div class="results-container" id="resultsContainer">
+            <div class="result-card" id="resultCard">
+                <div class="result-content" id="resultContent"></div>
+                <div class="result-navigation" id="resultNavigation">
+                    <button class="nav-btn" id="prevBtn" disabled>
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="white">
+                            <polygon points="15,18 9,12 15,6 15,18" />
+                        </svg>
+                    </button>
+                    <span class="page-indicator" id="pageIndicator">0/0</span>
+                    <button class="nav-btn" id="nextBtn" disabled>
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="white">
+                            <polygon points="9,18 15,12 9,6 9,18" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="web.js"></script>
+</body>
+</html>
